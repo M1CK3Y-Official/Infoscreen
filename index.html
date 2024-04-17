@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="slideshow.js" defer></script>
+    <script src="api.js" defer></script>
+    <script src="clock.js" defer></script>
+    <title>Infoskærm</title>
+</head>
+<body onload="startTime()">
+
+        <div class="grid">
+            
+            <div class="section-container">
+                
+                <div class="heading">
+                    <div class="heading-content">
+                        <h1>Møder idag</h1>
+                        <hr class="breakline">
+                    </div>
+                </div>
+                
+                <div class="meetings">
+                    
+                    
+                    <div class="meetings-container">
+                        
+                        
+                        <div class="meeting-container">
+                            <div class="meeting">    
+                            <div class="time-container">
+                                <p class="time">09:30</p>
+                            </div>
+                            <div class="info">
+                                <h2 class="name">Birgitte Hansen</h2>
+                                <div class="text">
+                                    <p class="topic">Social Marketing Strategies</p>
+                                    <p class="room">Mødelokale - 7</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr class="b-line">
+                        
+                        <div class="meeting">    
+                            <div class="time-container">
+                                <p class="time">10:45</p>
+                            </div>
+                            <div class="info">
+                                <h2 class="name">Thomas Pedersen</h2>
+                                <div class="text">
+                                    <p class="topic">Lønmøde</p>
+                                    <p class="room">Mødelokale - 5</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr class="b-line">
+                        
+                        <div class="meeting">    
+                            <div class="time-container">
+                                <p class="time">11:00</p>
+                            </div>
+                            <div class="info">
+                                <h2 class="name">Tove Frederiksen</h2>
+                                <div class="text">
+                                    <p class="topic">Årlig Rapport</p>
+                                    <p class="room">Mødelokale - 13</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="b-line">
+                        
+                        <div class="meeting">    
+                            <div class="time-container">
+                                <p class="time">12:50</p>
+                            </div>
+                            <div class="info">
+                                <h2 class="name">Lisbeth Kristensen</h2>
+                                <div class="text">
+                                    <p class="topic">Opgradering af it-systemer</p>
+                                    <p class="room">Mødelokale - 2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pics">            
+            
+            <div class="image fade">
+                <img src="https://picsum.photos/id/923/468/258" class="picture"> 
+            </div>
+            
+            <div class="image fade">
+                <img src="https://picsum.photos/id/392/468/258" class="picture"> 
+            </div>
+            
+            <div class="image fade">
+                <img src="https://picsum.photos/id/691/468/258" class="picture"> 
+            </div>
+            
+            <div class="image fade">
+                <img src="https://picsum.photos/id/668/468/258" class="picture">
+            </div>
+            
+        </div>
+        
+        <div class="date">
+            <h1 id="txt"></h1>
+            <p class="week"></p>
+        </div>
+        
+        <div class="news">
+            <div class="news-container">
+                <div class="news-list"></div>
+            </div>
+        </div>
+        
+        <div class="weather">
+            
+            
+            <div class="weather-card current">
+                <div class="c-icon"></div>
+                <div class="c-temp"></div>
+                <div class="c-condition"></div>
+            </div>
+            
+                <hr class="seperator">
+                
+                <div class="weather-card weekly">
+                    
+                    <div class="day day-1">
+                        <div class="weather-container">
+                            <div class="w-icon1"></div>
+                            <div class="w-temp1"></div>
+                        </div>
+                        
+                        <hr class="splitter">
+                        
+                        <div class="w-day1"></div>
+                    </div>
+                    
+                    <div class="day day-2">
+                        <div class="weather-container">
+                            <div class="w-icon2"></div>
+                            <div class="w-temp2"></div>
+                        </div>
+                        
+                        <hr class="splitter">
+                        
+                        <div class="w-day2">Mandag</div>
+                    </div>
+                    
+                    <div class="day day-3">
+                        <div class="weather-container">
+                            <div class="w-icon3"></div>
+                            <div class="w-temp3"></div>
+                        </div>
+                        
+                        <hr class="splitter">
+                        
+                        <div class="w-day3">Mandag</div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </body>
+    </html>
